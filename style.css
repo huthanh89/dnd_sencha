@@ -1,0 +1,40 @@
+#content{
+    width:80%;
+    height:400px;
+    padding:10px;
+    border:1px solid #000;
+}
+#tables{
+    float:left;
+    width:40%;
+    height:100%;
+    border:1px solid #AAA;
+    background-color:rgb(134, 223, 168);
+}
+#mainRoom{
+    float:left;
+    width:55%;
+    height:100%;
+    margin-left:15px;
+    border:1px solid #AAA;
+    background-color:rgba(222, 222, 222, 1.0);
+}
+.table{
+    background-color:rgba(254, 108, 98, 1.0);
+    border-radius:2px;
+    border:1px solid gray;    
+    width:64px;
+    height:64px;
+    margin:10px;
+    color:#FFF;
+    cursor:pointer;
+    text-align:right;
+    display: inline-block;
+}
+.valid-zone{
+    background-color:rgba(157, 229, 86, 1.0) !important;
+}
+.selected{
+    opacity:0.5;
+    background: blue;
+}
