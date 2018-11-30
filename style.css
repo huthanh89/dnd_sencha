@@ -1,25 +1,44 @@
 #content{
-    width:80%;
-    height:400px;
-    padding:10px;
-    border:1px solid #000;
+    height:  400px;
+    width:   90vw;
+    padding: 20px;
+    border:  1px solid #000;
 }
-#tables{
-    float:left;
-    width:40%;
+
+#inventory{
+    display: inline-block;
+    width:50%;
     height:100%;
+    float: left;
     border:1px solid #AAA;
     background-color:rgb(134, 223, 168);
 }
-#mainRoom{
-    float:left;
-    width:55%;
-    height:100%;
-    margin-left:15px;
-    border:1px solid #AAA;
+
+#motherboard-area{
+    display: inline-block;
+    width:  40%;
+    height: 100%;
+    float: right;
+    background: blue;
+    padding: 20px;
+}
+
+#cpu-area{
+    position: absolute;
+    width: 10%;
+    height: 10%;
     background-color:rgba(222, 222, 222, 1.0);
 }
-.table{
+
+#ram-area{
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: 200px;
+    background-color:rgba(222, 222, 222, 1.0);
+}
+
+.drag-item{
     background-color:rgba(254, 108, 98, 1.0);
     border-radius:2px;
     border:1px solid gray;    
@@ -30,10 +49,14 @@
     cursor:pointer;
     text-align:right;
     display: inline-block;
+    z-index: 1;
 }
+
 .valid-zone{
+    border: 3px dashed rgb(98, 141, 97) !important;
     background-color:rgba(157, 229, 86, 1.0) !important;
 }
+
 .selected{
     opacity:0.5;
     background: blue;

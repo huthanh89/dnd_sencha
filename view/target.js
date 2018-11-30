@@ -1,6 +1,4 @@
-Ext.define('view.target', {
-    title: 'some title',
-    extend: 'Ext.Panel',
-    flex: 1,
-    html: "hello world"
+Ext.define('View.Target', {
+    extend: 'Ext.dd.DDTarget',
+    ignoreSelf: false
 });
