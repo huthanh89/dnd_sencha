@@ -1,19 +1,22 @@
 
 
 Ext.application({
+    requires: [
+        'View.Main'
+    ],
+    
+    mainView: 'View.Main',
 
     launch: function() {
 
-        var cpu = Ext.create('View.Item', Ext.get('cpu'), 'cpuGroup', {});
-        cpu.addToGroup("inventoryGroup");
+        // Enable draggable items.
+        var item = Ext.create('View.Item', Ext.get('cpu'), 'cpuGroup', {});
+        var item = Ext.create('View.Item', Ext.get('ram'), 'cpuGroup', {});
 
-        var ram = Ext.create('View.Item', Ext.get('ram'), 'ramGroup', {});
-        ram.addToGroup("inventoryGroup");
-
-        //we set the drop targets
-        Ext.create('View.Target', 'inventory', 'inventoryGroup', {});
-        Ext.create('View.Target', 'cpu-area',  'cpuGroup',       {});
-        Ext.create('View.Target', 'ram-area',  'ramGroup',       {});
+        // Enable droppable zone.
+        
+        Ext.create('View.Target', 'hotspot-cpu', 'cpuGroup', {});
+        Ext.create('View.Target', 'hotspot-ram', 'cpuGroup', {});
 
     }
 });

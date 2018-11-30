@@ -14,15 +14,6 @@
     background-color:rgb(134, 223, 168);
 }
 
-#motherboard-area{
-    display: inline-block;
-    width:  40%;
-    height: 100%;
-    float: right;
-    background: blue;
-    padding: 20px;
-}
-
 #cpu-area{
     position: absolute;
     width: 10%;
@@ -39,25 +30,30 @@
 }
 
 .drag-item{
-    background-color:rgba(254, 108, 98, 1.0);
-    border-radius:2px;
-    border:1px solid gray;    
-    width:64px;
-    height:64px;
-    margin:10px;
-    color:#FFF;
-    cursor:pointer;
-    text-align:right;
-    display: inline-block;
-    z-index: 1;
+    width:  75px;
+    height: 75px;
+    cursor: pointer;
 }
 
 .valid-zone{
     border: 3px dashed rgb(98, 141, 97) !important;
-    background-color:rgba(157, 229, 86, 1.0) !important;
+    background-color:rgba(158, 229, 86, 0.219) !important;
 }
 
 .selected{
     opacity:0.5;
     background: blue;
+}
+
+.hotspot{
+    background: rgba(250, 61, 61, 0.801);
+    border: 3px dashed rgb(255, 251, 7);
+}
+
+#motherboard-container{
+    background-image:    url("./asset/motherboard.png");
+    background-repeat:   no-repeat;
+    background-position: center;
+    background-size:     contain;
+    min-height:          500px;
 }

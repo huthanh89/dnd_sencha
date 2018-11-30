@@ -1,39 +1,54 @@
 //----------------------------------------------------------------------------//
-// Item
+// Draggable Items
 //----------------------------------------------------------------------------//
 
-Ext.define('view.img', {
-    extend: 'Ext.Img',
-    src: 'http://www.sencha.com/assets/images/sencha-avatar-64x64.png',
-    xtype: 'myimage',
-    height: 75,
-    width: 75
+var cpu = Ext.create('Ext.Img', {
+    src: './asset/cpu.png',
+    id:  'cpu',
+    cls: 'drag-item'
 });
 
-var myImage = Ext.create('view.img', {
-    draggable : true,
-    id: 'asdf',
-    listeners : {
-        afterrender : function(stick){
-            console.log('after render', stick.el.dom.id);
-            stick.dd = new Ext.dd.DDProxy(stick.el.dom.id, 'group');
-        }
-    }
+var ram = Ext.create('Ext.Img', {
+    src: './asset/ram.png',
+    id:  'ram',
+    cls: 'drag-item'
 });
 
 //----------------------------------------------------------------------------//
-// Drop Zone
+// Droppable Zones
 //----------------------------------------------------------------------------//
 
-Ext.define('view.target', {
-    extend: 'Ext.Panel',
+var inventory = Ext.create('Ext.Container', {
+    id:    'inventory-area',
     flex: 1,
-    html: "drop here",
-    id: 'mytarget',
-    cls: 'album'
+    items:[
+        cpu,
+        ram
+    ]
 });
 
-var targetZone = Ext.create('view.target');
+var hotspotCPU = Ext.create('Ext.Container', {
+    id:  'hotspot-cpu',
+    cls: 'hotspot',
+    width:  100,
+    height: 100,
+});
+
+var hotspotRam = Ext.create('Ext.Container', {
+    id:  'hotspot-ram',
+    cls: 'hotspot',
+    width:  100,
+    height: 100,
+});
+
+var motherboard = Ext.create('Ext.Container', {
+    id:    'motherboard-container',
+    flex: 1,
+    items:[
+        hotspotCPU,
+        hotspotRam
+    ]
+});
 
 
 //----------------------------------------------------------------------------//
@@ -42,12 +57,14 @@ var targetZone = Ext.create('view.target');
 
 Ext.define('View.Main', {
     extend: 'Ext.Panel',
-    title: 'some title',
     layout: {
         type:   'hbox',
         align : 'stretch',
-    }
-
+    },
+    items:[
+        motherboard,
+        inventory,
+    ]
 });
 
 //----------------------------------------------------------------------------//
