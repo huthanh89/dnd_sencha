@@ -3,7 +3,7 @@
 var dd = Ext.define('View.Item', {
     extend:  'Ext.dd.DD',
     isTarget: false,
-    startDrag: function(e,) {
+    startDrag: function(e) {
         //add a css class to add some transparency to our div
         this.el.addCls('selected');
         //when we drop our item on an invalid place  we need to return it to its initial position

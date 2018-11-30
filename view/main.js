@@ -40,17 +40,14 @@ var targetZone = Ext.create('view.target');
 // Main View
 //----------------------------------------------------------------------------//
 
-Ext.define('view.main', {
+Ext.define('View.Main', {
     extend: 'Ext.Panel',
     title: 'some title',
     layout: {
         type:   'hbox',
         align : 'stretch',
-    },
-    items: [
-        targetZone,
-        myImage,
-    ]
+    }
+
 });
 
 //----------------------------------------------------------------------------//
