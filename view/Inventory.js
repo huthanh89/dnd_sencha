@@ -40,7 +40,7 @@ Ext.define('view.Inventory', {
     style: {
         borderColor:'#000000', 
         borderStyle:'solid', 
-        borderWidth:'12px'
+        borderWidth:'1px'
     },
     items:[
         cpu,

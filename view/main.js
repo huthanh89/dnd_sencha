@@ -8,7 +8,9 @@ Ext.define('View.Main', {
         Ext.create('view.Motherboard', {
             id: 'motherboard-container'
         }),
-        Ext.create('view.Inventory'),
+        Ext.create('view.Inventory', {
+            id: 'inventory'
+        }),
     ]
 });
 
