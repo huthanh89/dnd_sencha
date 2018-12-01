@@ -8,6 +8,7 @@ Ext.define('View.Main', {
         Ext.create('Ext.tab.Panel', {
             activeTab: 1,
             width:     600,
+            style: 'background: red',
             items: [
                 {
 
@@ -22,7 +23,6 @@ Ext.define('View.Main', {
                         Ext.create('view.workspace.Motherboard', {
                             id: 'motherboard-container'
                         }),
-                            
                         Ext.create('view.workspace.Inventory', {
                             id: 'inventory'
                         })

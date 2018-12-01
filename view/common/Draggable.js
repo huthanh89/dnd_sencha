@@ -4,8 +4,7 @@
 
 Ext.define('view.common.Draggable', {
 
-    extend:  'Ext.dd.DDProxy',
-    isTarget: false,
+    extend: 'Ext.dd.DDProxy',
 
     startDrag: function(e) {
         this.el.addCls('selected');
@@ -26,11 +25,13 @@ Ext.define('view.common.Draggable', {
         Ext.fly(targetID).removeCls('valid-zone');
     },
 
+    // Handle valid drop.
+
     onDragDrop: function(e, targetID) {
-        let targetPosition = Ext.fly(targetID).el.getXY()
-        this.el.setX(targetPosition[0]);
-        this.el.setY(targetPosition[1]);
+        Ext.fly(`${targetID}-innerCt`).el.append(this.el);
     },
+
+    // Handle invalid drop.
 
     onInvalidDrop: function() {
         this.el.removeCls('valid-zone');

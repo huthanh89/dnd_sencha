@@ -36,6 +36,7 @@ var gCard = Ext.create('Ext.Img', {
 
 Ext.define('view.workspace.Inventory', {
     extend: 'Ext.Container',
+    height: 200,
     style: {
         borderColor:'#000000', 
         borderStyle:'solid', 
