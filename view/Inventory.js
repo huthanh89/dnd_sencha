@@ -3,9 +3,8 @@
 //----------------------------------------------------------------------------//
 
 var style = `
-    width:  75px; 
-    height: 75px; 
-    cursor: pointer;
+    width:  100px; 
+    height: 100px; 
 `
 var cpu = Ext.create('Ext.Img', {
     src:  './asset/cpu.png',
@@ -40,7 +39,8 @@ Ext.define('view.Inventory', {
     style: {
         borderColor:'#000000', 
         borderStyle:'solid', 
-        borderWidth:'1px'
+        borderWidth:'1px',
+        background: 'grey'
     },
     items:[
         cpu,
