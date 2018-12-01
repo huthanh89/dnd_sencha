@@ -15,9 +15,9 @@ Ext.application({
 
         // Create draggable items.
         Ext.create('view.common.Draggable', Ext.get('cpu'), 'cpuGroup').addToGroup('inventoryGroup');
-        Ext.create('view.common.Draggable', Ext.get('ram'), 'ramGroup');
-        Ext.create('view.common.Draggable', Ext.get('powersupply'), 'powerGroup');
-        Ext.create('view.common.Draggable', Ext.get('graphiccard'), 'graphicGroup');
+        Ext.create('view.common.Draggable', Ext.get('ram'), 'ramGroup').addToGroup('inventoryGroup');
+        Ext.create('view.common.Draggable', Ext.get('powersupply'), 'powerGroup ').addToGroup('inventoryGroup');
+        Ext.create('view.common.Draggable', Ext.get('graphiccard'), 'graphicGroup').addToGroup('inventoryGroup');
         
         // Create droppable zones.
         

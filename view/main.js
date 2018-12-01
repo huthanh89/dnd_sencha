@@ -6,9 +6,8 @@ Ext.define('View.Main', {
     extend: 'Ext.container.Viewport',
     items:[
         Ext.create('Ext.tab.Panel', {
-            width: 600,
-
             activeTab: 1,
+            width:     600,
             items: [
                 {
 
