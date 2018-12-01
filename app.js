@@ -18,7 +18,7 @@ Ext.application({
         Ext.create('View.Item', Ext.get('powersupply'), 'powerGroup');
         Ext.create('View.Item', Ext.get('graphiccard'), 'graphicGroup');
         
-        // Create droppable zone.
+        // Create droppable zones.
         
         Ext.create('View.Target', 'hotspot-cpu', 'cpuGroup');
         Ext.create('View.Target', 'hotspot-ram', 'ramGroup');
