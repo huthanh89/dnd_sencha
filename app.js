@@ -3,16 +3,17 @@
 //----------------------------------------------------------------------------//
 
 Ext.application({
+
     requires: [
         'View.Main'
     ],
     
-    mainView: 'View.Main',
-    
     launch: function() {
         
+        //this.setMainView('View.Main');
+        Ext.create('View.Main');
+
         // Create draggable items.
-        
         Ext.create('View.Item', Ext.get('cpu'), 'cpuGroup');
         Ext.create('View.Item', Ext.get('ram'), 'ramGroup');
         Ext.create('View.Item', Ext.get('powersupply'), 'powerGroup');
