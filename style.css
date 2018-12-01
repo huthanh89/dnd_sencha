@@ -1,38 +1,8 @@
-#content{
-    height:  400px;
-    width:   90vw;
-    padding: 20px;
-    border:  1px solid #000;
-}
-
-#inventory{
-    display: inline-block;
-    width:50%;
-    height:100%;
-    float: left;
-    border:1px solid #AAA;
-    background-color:rgb(134, 223, 168);
-}
-
-#cpu-area{
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    background-color:rgba(222, 222, 222, 1.0);
-}
-
-#ram-area{
-    position: absolute;
-    width: 10%;
-    height: 10%;
-    top: 200px;
-    background-color:rgba(222, 222, 222, 1.0);
-}
-
-.drag-item{
-    width:  75px;
-    height: 75px;
-    cursor: pointer;
+#motherboard-container{
+    background-image:    url("./asset/motherboard.png");
+    background-repeat:   no-repeat;
+    background-position: center;
+    background-size:     contain;
 }
 
 .valid-zone{
@@ -48,12 +18,4 @@
 .hotspot{
     background: rgba(250, 61, 61, 0.801);
     border: 3px dashed rgb(255, 251, 7);
-}
-
-#motherboard-container{
-    background-image:    url("./asset/motherboard.png");
-    background-repeat:   no-repeat;
-    background-position: center;
-    background-size:     contain;
-    min-height:          500px;
 }

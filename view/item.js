@@ -4,12 +4,6 @@ var dd = Ext.define('View.Item', {
     extend:  'Ext.dd.DDProxy',
     isTarget: false,
 
-    constrainX: true,
-    constrainY: true,
-    maxX: 99999,
-    maxY: 888888,
-    ignoreSelf: false,
-
     startDrag: function(e) {
         //add a css class to add some transparency to our div
         this.el.addCls('selected');
