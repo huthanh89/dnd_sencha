@@ -6,16 +6,16 @@
 }
 
 .valid-zone{
-    border: 3px dashed rgb(98, 141, 97) !important;
-    background-color:rgba(158, 229, 86, 0.219) !important;
+    border:      3px dashed rgb(190, 188, 51) !important;
+    background:rgba(19, 82, 37, 0.438) !important;
 }
 
 .selected{
-    opacity:0.5;
-    background: blue;
+    opacity:      0.5;
+    background: rgba(55, 55, 189, 0.575);
 }
 
 .hotspot{
-    background: rgba(250, 61, 61, 0.801);
-    border: 3px dashed rgb(255, 251, 7);
+    background: rgba(250, 146, 61, 0.801);
+    border:       3px dashed rgb(255, 251, 7);
 }
