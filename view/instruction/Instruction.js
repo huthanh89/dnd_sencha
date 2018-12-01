@@ -4,6 +4,7 @@
 
 Ext.define('view.instruction.Instruction', {
     extend: 'Ext.Container',
+    style: 'font-size: 18px; padding: 20px;',
     html:   
         `
         <div>
