@@ -1,5 +1,5 @@
 //----------------------------------------------------------------------------//
-// Components
+// ITE Components
 //----------------------------------------------------------------------------//
 
 var hotspotCPU = Ext.create('Ext.Container', {
@@ -10,7 +10,6 @@ var hotspotCPU = Ext.create('Ext.Container', {
     layout: 'absolute',
     x:       340,
     y:       160
-    
 });
 
 var hotspotRam = Ext.create('Ext.Container', {

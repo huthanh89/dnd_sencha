@@ -4,9 +4,10 @@
 
 Ext.define('View.Main', {
     extend: 'Ext.container.Viewport',
-    style:  'overflow: auto;',
     items:[
         Ext.create('Ext.tab.Panel', {
+            width: 600,
+
             activeTab: 1,
             items: [
                 {

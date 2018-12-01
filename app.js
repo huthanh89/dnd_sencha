@@ -14,7 +14,7 @@ Ext.application({
         Ext.create('View.Main');
 
         // Create draggable items.
-        Ext.create('view.common.Draggable', Ext.get('cpu'), 'cpuGroup');
+        Ext.create('view.common.Draggable', Ext.get('cpu'), 'cpuGroup').addToGroup('inventoryGroup');
         Ext.create('view.common.Draggable', Ext.get('ram'), 'ramGroup');
         Ext.create('view.common.Draggable', Ext.get('powersupply'), 'powerGroup');
         Ext.create('view.common.Draggable', Ext.get('graphiccard'), 'graphicGroup');
