@@ -14,24 +14,23 @@ Ext.application({
 
         Ext.create('View.Main');
 
-        // Create draggable items.
+        // Create DragDrop items.
 
-        function createDraggableItem(id){
+        function createDDItem(id){
             Ext.create('view.common.Draggable', Ext.get(id), `${id}Group`, {
                 isTarget: false
             })
             .addToGroup('inventoryGroup');
+            Ext.create('view.common.Target', `hotspot-${id}`, `${id}Group`);
         };
 
-        createDraggableItem('cpu');
-        createDraggableItem('ram');
-        createDraggableItem('powersupply');
-        createDraggableItem('graphiccard');
+        createDDItem('cpu');
+        createDDItem('ram');
+        createDDItem('powersupply');
+        createDDItem('graphiccard');
         
-        // Create droppable zones.
+        // Create droppable inventory zone.
         
-        Ext.create('view.common.Target', 'hotspot-cpu', 'cpuGroup');
-        Ext.create('view.common.Target', 'hotspot-ram', 'ramGroup');
         Ext.create('view.common.Target', 'inventory', 'inventoryGroup');
         
     }
