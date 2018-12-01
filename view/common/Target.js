@@ -2,7 +2,7 @@
 // Droppable Class
 //----------------------------------------------------------------------------//
 
-Ext.define('View.Target', {
+Ext.define('view.common.Target', {
     extend: 'Ext.dd.DDTarget',
     ignoreSelf: false
 });

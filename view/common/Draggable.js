@@ -2,7 +2,7 @@
 // Draggable Class
 //----------------------------------------------------------------------------//
 
-Ext.define('View.Item', {
+Ext.define('view.common.Draggable', {
 
     extend:  'Ext.dd.DDProxy',
     isTarget: false,

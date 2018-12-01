@@ -14,16 +14,16 @@ Ext.application({
         Ext.create('View.Main');
 
         // Create draggable items.
-        Ext.create('View.Item', Ext.get('cpu'), 'cpuGroup');
-        Ext.create('View.Item', Ext.get('ram'), 'ramGroup');
-        Ext.create('View.Item', Ext.get('powersupply'), 'powerGroup');
-        Ext.create('View.Item', Ext.get('graphiccard'), 'graphicGroup');
+        Ext.create('view.common.Draggable', Ext.get('cpu'), 'cpuGroup');
+        Ext.create('view.common.Draggable', Ext.get('ram'), 'ramGroup');
+        Ext.create('view.common.Draggable', Ext.get('powersupply'), 'powerGroup');
+        Ext.create('view.common.Draggable', Ext.get('graphiccard'), 'graphicGroup');
         
         // Create droppable zones.
         
-        Ext.create('View.Target', 'hotspot-cpu', 'cpuGroup');
-        Ext.create('View.Target', 'hotspot-ram', 'ramGroup');
-        Ext.create('View.Target', 'inventory', 'inventoryGroup');
+        Ext.create('view.common.Target', 'hotspot-cpu', 'cpuGroup');
+        Ext.create('view.common.Target', 'hotspot-ram', 'ramGroup');
+        Ext.create('view.common.Target', 'inventory', 'inventoryGroup');
         
     }
 });

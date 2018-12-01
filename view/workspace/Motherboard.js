@@ -23,7 +23,7 @@ var hotspotRam = Ext.create('Ext.Container', {
     y:       260
 });
 
-Ext.define('view.Motherboard', {
+Ext.define('view.workspace.Motherboard', {
     extend: 'Ext.Container',
     width:   500,
     height:  500,
