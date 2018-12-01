@@ -10,13 +10,16 @@ Ext.application({
     launch: function() {
 
         // Enable draggable items.
-        var item = Ext.create('View.Item', Ext.get('cpu'), 'cpuGroup', {});
-        var item = Ext.create('View.Item', Ext.get('ram'), 'cpuGroup', {});
+        
+        Ext.create('View.Item', Ext.get('cpu'), 'cpuGroup', {});
+        Ext.create('View.Item', Ext.get('ram'), 'ramGroup', {});
+        Ext.create('View.Item', Ext.get('powersupply'), 'inventoryGroup', {});
+        Ext.create('View.Item', Ext.get('graphiccard'), 'inventoryGroup', {});
 
         // Enable droppable zone.
         
         Ext.create('View.Target', 'hotspot-cpu', 'cpuGroup', {});
-        Ext.create('View.Target', 'hotspot-ram', 'cpuGroup', {});
+        Ext.create('View.Target', 'hotspot-ram', 'ramGroup', {});
 
     }
 });

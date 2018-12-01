@@ -16,7 +16,18 @@ var cpu = Ext.create('Ext.Img', {
 var ram = Ext.create('Ext.Img', {
     src:  './asset/ram.png',
     id:   'ram',
-    cls:  'drag-item',
+    style: style
+});
+
+var power = Ext.create('Ext.Img', {
+    src:  './asset/powersupply.png',
+    id:   'powersupply',
+    style: style
+});
+
+var gCard = Ext.create('Ext.Img', {
+    src:  './asset/graphic_card.png',
+    id:   'graphiccard',
     style: style
 });
 
@@ -33,7 +44,9 @@ Ext.define('view.Inventory', {
     },
     items:[
         cpu,
-        ram
+        ram,
+        power,
+        gCard
     ]
 });
 
