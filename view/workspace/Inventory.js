@@ -38,10 +38,10 @@ Ext.define('view.workspace.Inventory', {
     extend: 'Ext.Container',
     height: 200,
     style: {
-        borderColor:'#000000', 
-        borderStyle:'solid', 
-        borderWidth:'1px',
-        background: 'grey'
+        borderColor: '#000000', 
+        borderStyle: 'solid', 
+        borderWidth: '1px',
+        background:  'grey'
     },
     items:[
         cpu,

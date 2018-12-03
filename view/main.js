@@ -6,15 +6,22 @@ Ext.define('View.Main', {
     extend: 'Ext.container.Viewport',
     items:[
         Ext.create('Ext.tab.Panel', {
-            activeTab: 1,
+            activeTab: 2,
             width:     600,
-            style: 'background: red',
+            id: 'mainPanel',
             items: [
                 {
 
                     title: 'Instructions',
                     items:[
                         Ext.create('view.instruction.Instruction')
+                    ]
+                },
+                {
+
+                    title: 'Storage',
+                    items:[
+                        Ext.create('view.storage.Storage')
                     ]
                 },
                 {
