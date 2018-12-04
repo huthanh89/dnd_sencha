@@ -77,7 +77,10 @@ Ext.define('view.storage.Button', {
     flex:    1,
     margin:  30,
     height:  30,
-    html:   'Select'
+    html:   'Select',
+    onClick: function(){
+        Ext.getCmp('mainPanel').setActiveItem(2);
+    }
 });
 
 Ext.define('view.storage.Component', {
