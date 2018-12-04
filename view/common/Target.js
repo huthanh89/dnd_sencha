@@ -3,7 +3,7 @@
 //----------------------------------------------------------------------------//
 
 Ext.define('view.common.Target', {
-    extend: 'Ext.dd.DDTarget',
+    extend:    'Ext.dd.DDTarget',
     ignoreSelf: false
 });
 
